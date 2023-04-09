@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon History</title>
+</head>
+<body id="body">
+<style>
+    #bg{
+        position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+
+    #tab1{
+        position: relative;
+        left: 300px;
+        top: 10px;
+        border: 3px solid blueviolet;
+        background-color: cornflowerblue;
+        width: 180px;
+    }
+
+#tab2{
+    position: relative;
+    left: 500px;
+    bottom: 14px;
+    width: 200px;
+    border: 3px solid darkred;
+    background-color: cornflowerblue;
+}
+</style>
+
+<div id="bg">
+<div id="tab1">How computers Started</div>
+<div id="tab2">Computers Evolution</div>
+<p ><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+</div>
+
+    <script >
+let body = document.getElementById("body")
+let p = document.createElement("P")
+let bg = document.getElementById("bg")
+
+body.appendChild(p)
+
+p.innerText = ""
+
+    </script>
+</body>
+</html>
