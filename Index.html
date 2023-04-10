@@ -11,10 +11,6 @@
 </head>
 <body id="body">
 <style>
-    #body{
-        display: flex;
-    }
-
     #bg{
         color: aliceblue;
         position: relative;
@@ -26,10 +22,17 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
     }
 
     .tabs{
+        position: absolute;
+
         border: solid 5px black;
         color: aliceblue;
         width: fit-content;
         height: fit-content;
+    }
+
+    .tab-Content{
+        position: absolute;
+        left: 300px;
     }
 
 </style>
@@ -37,47 +40,48 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 <div id="bg">
 
 
-<div class="tabs">
+<div class="tabs" onclick="tab3clicked()">
 
-<div id="tab1">
-    <p>How Computers Started</p>
+
+<div id="tab1" >
+    <p onclick="tab1clicked()">How Computers Started</p>
 <br>
 </div>
 
-<div id="tab2">
-<p>The Evolution of Computers</p>
+<div id="tab2" >
+<p onclick="tab2clicked()">The Evolution of Computers</p>
 <br>
 </div>
 
-<div id="tab3">
+<div id="tab3" onclick="tab3clicked()">
     <p>Computers Today</p>
 </div>
 
 </div>
 
 <div class="tab-Content">
-<div id="C1">
-    <h3>
+<div id="C1" >
+    <h1>
         What are computers?
-    </h3>
+    </h1>
 
     <p>
         some text here
     </p>
 
 </div>
-<div id="C2">
-    <h3>
+<div id="C2" style="display: none;">
+    <h1>
         Computers start to look similair.
-    </h3>
+    </h1>
     <p>
         and here
     </p>
 </div>
-<div id="C3">
-    <h3>
+<div id="C3" style="display: none;">
+    <h1>
         Computers are allowed in schools
-    </h3>
+    </h1>
 
     <p>
         more text here too
@@ -90,6 +94,25 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 
 </div>
 
-<script src="main.js" type="module"></script>
+<script >
+    let tab1 = document.getElementById("C1"), tab2 = document.getElementById("C2"), tab3 = document.getElementById("C3")
+   function tab1clicked(){
+    tab1.style = "display : block"
+    tab2.style = "display : none"
+    tab3.style = "display : none"
+    }
+
+    function tab2clicked(){
+        tab2.style = "display : block"
+        tab1.style = "display : none"
+        tab3.style = "display : none"
+        }
+
+        function tab3clicked(){
+            tab3.style = "display : block"
+            tab2.style = "display : none"
+            tab1.style = "display : none"
+            }
+</script>
 </body>
 </html>
