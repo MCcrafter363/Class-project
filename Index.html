@@ -12,6 +12,7 @@
 <body id="body">
 <style>
     #bg{
+        color: aliceblue;
         position: relative;
   left: 0px;
   top: 0px;
@@ -20,34 +21,67 @@
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     }
 
+    .tabs{
+        border: solid 5px black;
+        color: aliceblue;
+    }
+
 </style>
 
 <div id="bg">
+
+
 <div class="tabs">
+
 <div id="tab1">
-
+    How Computers Started
 </div>
+
 <div id="tab2">
-
+    The Evolution of Computers
 </div>
+
 <div id="tab3">
+    Computers Today
+</div>
 
 </div>
+
+<div class="tab-Content">
+<div id="C1">
+    <h3>
+        What are computers?
+    </h3>
+
+    <p>
+        some text here
+    </p>
+
 </div>
+<div id="C2">
+    <h3>
+        Computers start to look similair.
+    </h3>
+    <p>
+        and here
+    </p>
+</div>
+<div id="C3">
+    <h3>
+        Computers are allowed in schools
+    </h3>
+
+    <p>
+        more text here too
+    </p>
+</div>
+</div>
+
 <p ><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+
+
 </div>
 
-    <script >
-let body = document.getElementById("body")
-let p = document.createElement("P")
-let bg = document.getElementById("bg")
-
-body.appendChild(p)
-
-
-
-p.innerText = ""
-
-    </script>
+<script src="main.js" type="module"></script>
 </body>
 </html>
