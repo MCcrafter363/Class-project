@@ -11,6 +11,10 @@
 </head>
 <body id="body">
 <style>
+    #body{
+        display: flex;
+    }
+
     #bg{
         color: aliceblue;
         position: relative;
@@ -24,6 +28,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
     .tabs{
         border: solid 5px black;
         color: aliceblue;
+        width: fit-content;
+        height: fit-content;
     }
 
 </style>
@@ -34,15 +40,17 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 <div class="tabs">
 
 <div id="tab1">
-    How Computers Started
+    <p>How Computers Started</p>
+<br>
 </div>
 
 <div id="tab2">
-    The Evolution of Computers
+<p>The Evolution of Computers</p>
+<br>
 </div>
 
 <div id="tab3">
-    Computers Today
+    <p>Computers Today</p>
 </div>
 
 </div>
